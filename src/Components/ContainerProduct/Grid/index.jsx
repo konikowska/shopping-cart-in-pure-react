@@ -1,14 +1,15 @@
 import * as React from "react";
 import GridItem from "./GridItem";
+import './styles.scss'
 
-const Grid = ({ items }) => {
+const Grid = ({ items, className }) => {
   if (!items) {
     return null;
   }
   return (
-    <ul>
+    <ul className={className}>
       {Object.values(items).map(item => (
-        <GridItem key={item.name} item={item} />
+        <GridItem key={item.name} item={item} className="grid-item" />
       ))}
     </ul>
   );

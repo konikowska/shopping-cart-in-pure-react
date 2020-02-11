@@ -5,14 +5,9 @@ export const CartContext = React.createContext();
 const CartContextProvider = props => {
   const [cart, setCart] = React.useState([]);
 
-  React.useEffect(() => {
-    console.log(cart);
-  }, [cart]);
-
   const updateProduct = product => {
     setCart(prevState =>
       prevState.reduce((prev, curr) => {
-        console.log({ prev, curr });
         if (curr.id === product.id) {
           curr.quantity = product.quantity + 1;
         }
@@ -29,7 +24,6 @@ const CartContextProvider = props => {
     }
 
     setCart([...cart, { ...product, quantity: 1 }]);
-    console.log(cart);
   };
 
   return (

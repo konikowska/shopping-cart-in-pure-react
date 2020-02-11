@@ -1,0 +1,17 @@
+* {
+  border: 1px solid red;
+}
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  font-size: 62.5%;
+  row-gap: 2rem;
+
+  .cart {
+    padding: 2rem;
+  }
+
+  .products {
+    padding: 2rem;
+  }
+}

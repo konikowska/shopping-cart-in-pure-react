@@ -1,10 +1,10 @@
 import * as React from "react";
 import { CartContext } from "../../contexts/CartContext";
 
-const Cart = () => {
+const Cart = ({ className }) => {
   const { cart } = React.useContext(CartContext);
   return (
-    <div>
+    <div className={className}>
       {cart.map(item => (
         <div key={item.id}>
           {item.name}

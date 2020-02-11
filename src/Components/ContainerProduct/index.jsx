@@ -1,9 +1,9 @@
 import * as React from "react";
 import GridProducts from "./GridProducts";
 
-const ContainerProduct = () => {
+const ContainerProduct = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <p>Products</p>
       <label htmlFor="cars">Sort: </label>
       <select id="sort">

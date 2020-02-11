@@ -1,21 +1,12 @@
 import * as React from "react";
 import Grid from "../Grid";
-// import { fetchProducts } from "../../../api/agent";
 import products from "../../../api/mockup/data.json";
 
-const GridProducts = () => {
-  // const [products, setProducts] = React.useState(null);
-  // React.useEffect(() => {
-  //   fetchProducts().then(res => {
-  //     setProducts(res);
-  //   });
-  // });
-  console.log(products);
-
+const GridProducts = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <p>GridProducts Container</p>
-      {products && <Grid items={products} />}
+      {products && <Grid items={products} className="product-grid"/>}
     </div>
   );
 };
