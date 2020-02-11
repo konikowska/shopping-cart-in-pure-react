@@ -8,7 +8,7 @@
 
   .product-image {
     width: auto;
-    height: 100px;
-    background: yellowgreen;
+    max-height: 11rem;
+    object-fit: contain;
   }
 }

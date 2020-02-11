@@ -1,8 +1,8 @@
 const data = {
   "1": {
     id: 1,
-    name: 1,
-    price: 10,
+    name: 'Cabinet',
+    price: 100,
     currency: "USD",
     image: {
       path: require("../../assets/images/1.jpeg")
@@ -10,8 +10,8 @@ const data = {
   },
   "2": {
     id: 2,
-    name: 2,
-    price: 20,
+    name: 'Sofa',
+    price: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/2.jpeg")
@@ -19,8 +19,8 @@ const data = {
   },
   "3": {
     id: 3,
-    name: 2,
-    price: 20,
+    name: 'Cabinet',
+    price: 100,
     currency: "USD",
     image: {
       path: require("../../assets/images/3.jpeg")
@@ -28,8 +28,8 @@ const data = {
   },
   "4": {
     id: 4,
-    name: 2,
-    price: 20,
+    name: 'Desk lamp',
+    price: 50,
     currency: "USD",
     image: {
       path: require("../../assets/images/4.jpeg")
@@ -37,8 +37,8 @@ const data = {
   },
   "5": {
     id: 5,
-    name: 2,
-    price: 20,
+    name: 'Armchair',
+    price: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/5.jpeg")
@@ -46,8 +46,8 @@ const data = {
   },
   "6": {
     id: 6,
-    name: 2,
-    price: 20,
+    name: 'Colorful chairs',
+    price: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/6.jpeg")
@@ -55,8 +55,8 @@ const data = {
   },
   "7": {
     id: 7,
-    name: 2,
-    price: 20,
+    name: 'Table',
+    price: 1000,
     currency: "USD",
     image: {
       path:require( "../../assets/images/7.jpeg")
@@ -64,7 +64,7 @@ const data = {
   },
   "8": {
     id: 8,
-    name: 2,
+    name: 'Mirror',
     price: 20,
     currency: "USD",
     image: {
@@ -73,8 +73,8 @@ const data = {
   },
   "9": {
     id: 9,
-    name: 2,
-    price: 20,
+    name: 'Desk',
+    price: 200,
     currency: "USD",
     image: {
       path: require("../../assets/images/9.jpeg")
@@ -82,8 +82,8 @@ const data = {
   },
   "10": {
     id: 10,
-    name: 2,
-    price: 20,
+    name: 'Stool',
+    price: 1,
     currency: "USD",
     image: {
       path: require("../../assets/images/10.jpeg")

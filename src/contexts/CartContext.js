@@ -10,6 +10,7 @@ const CartContextProvider = props => {
       prevState.reduce((prev, curr) => {
         if (curr.id === product.id) {
           curr.quantity = product.quantity + 1;
+          curr.price = product.price * curr.quantity;
         }
         return [...prevState];
       }, [])

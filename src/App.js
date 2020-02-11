@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.scss";
 import ContainerProduct from "./Components/ContainerProduct";
-import ContainerCart from "./Components/ContainerCart";
+import CartContainer from "./Components/CartContainer";
 import CartContextProvider from "./contexts/CartContext";
 
 function App() {
   return (
     <div className="App">
       <CartContextProvider>
-        <ContainerCart className="cart" />
+        <CartContainer className="cart" />
         <ContainerProduct className="products" />
       </CartContextProvider>
     </div>
