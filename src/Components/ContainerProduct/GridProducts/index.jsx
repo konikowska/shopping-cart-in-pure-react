@@ -1,6 +1,6 @@
 import * as React from "react";
 import Grid from "../Grid";
-import products from "../../../api/mockup/data.json";
+import products from "../../../api/mockup/data.js";
 
 const GridProducts = ({ className }) => {
   return (
