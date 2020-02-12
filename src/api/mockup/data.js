@@ -2,7 +2,7 @@ const data = {
   "1": {
     id: 1,
     name: 'Cabinet',
-    price: 100,
+    initialPrice: 100,
     currency: "USD",
     image: {
       path: require("../../assets/images/1.jpeg")
@@ -11,7 +11,7 @@ const data = {
   "2": {
     id: 2,
     name: 'Sofa',
-    price: 400,
+    initialPrice: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/2.jpeg")
@@ -20,7 +20,7 @@ const data = {
   "3": {
     id: 3,
     name: 'Cabinet',
-    price: 100,
+    initialPrice: 100,
     currency: "USD",
     image: {
       path: require("../../assets/images/3.jpeg")
@@ -29,7 +29,7 @@ const data = {
   "4": {
     id: 4,
     name: 'Desk lamp',
-    price: 50,
+    initialPrice: 50,
     currency: "USD",
     image: {
       path: require("../../assets/images/4.jpeg")
@@ -38,7 +38,7 @@ const data = {
   "5": {
     id: 5,
     name: 'Armchair',
-    price: 400,
+    initialPrice: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/5.jpeg")
@@ -47,7 +47,7 @@ const data = {
   "6": {
     id: 6,
     name: 'Colorful chairs',
-    price: 400,
+    initialPrice: 400,
     currency: "USD",
     image: {
       path: require("../../assets/images/6.jpeg")
@@ -56,7 +56,7 @@ const data = {
   "7": {
     id: 7,
     name: 'Table',
-    price: 1000,
+    initialPrice: 1000,
     currency: "USD",
     image: {
       path:require( "../../assets/images/7.jpeg")
@@ -65,7 +65,7 @@ const data = {
   "8": {
     id: 8,
     name: 'Mirror',
-    price: 20,
+    initialPrice: 20,
     currency: "USD",
     image: {
       path: require("../../assets/images/8.jpeg")
@@ -74,7 +74,7 @@ const data = {
   "9": {
     id: 9,
     name: 'Desk',
-    price: 200,
+    initialPrice: 200,
     currency: "USD",
     image: {
       path: require("../../assets/images/9.jpeg")
@@ -83,7 +83,7 @@ const data = {
   "10": {
     id: 10,
     name: 'Stool',
-    price: 1,
+    initialPrice: 1,
     currency: "USD",
     image: {
       path: require("../../assets/images/10.jpeg")

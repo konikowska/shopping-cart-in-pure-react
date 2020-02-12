@@ -12,7 +12,7 @@ const GridItem = ({ item, className }) => {
       <img src={`${item.image.path}`} alt="" className="product__image" />
       <div className="product__desc">
         <p>{item.name}</p>
-        <p>{`${item.price} ${item.currency}`}</p>
+        <p>{`${item.initialPrice} ${item.currency}`}</p>
       </div>
       <button onClick={handleAddToCartClick} className="product__button">add to cart</button>
     </li>
