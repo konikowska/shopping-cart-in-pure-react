@@ -1,0 +1,41 @@
+.cart-item {
+  display: grid;
+  column-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid gray;
+
+  .cart__image {
+    max-width: 50px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .cart__name {
+  }
+
+  .cart_quantity-section {
+    display: grid;
+    grid-template-columns: repeat(2, 2rem);
+    column-gap: 2rem;
+    align-items: inherit;
+    justify-content: inherit;
+
+    .cart_quantity__quantity {
+    }
+
+    .cart_quantity__buttons {
+      display: grid;
+      grid-template-rows: repeat(2, 2rem);
+      row-gap: 1rem;
+
+      .button--add {
+      }
+      .button--dub {
+      }
+    }
+  }
+}

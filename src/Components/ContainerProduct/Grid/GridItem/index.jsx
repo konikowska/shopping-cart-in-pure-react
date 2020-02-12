@@ -4,14 +4,17 @@ import "./styles.scss";
 
 const GridItem = ({ item, className }) => {
   const { addProduct } = React.useContext(CartContext);
+  const handleAddToCartClick = () => {
+    addProduct(item);
+  };
   return (
     <li className={className} key={item.name}>
-      <img src={`${item.image.path}`} alt="" className="product-image" />
-      <div>
+      <img src={`${item.image.path}`} alt="" className="product__image" />
+      <div className="product__desc">
         <p>{item.name}</p>
         <p>{`${item.price} ${item.currency}`}</p>
       </div>
-      <button onClick={() => addProduct(item)}>add to cart</button>
+      <button onClick={handleAddToCartClick} className="product__button">add to cart</button>
     </li>
   );
 };
