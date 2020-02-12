@@ -12,7 +12,7 @@ const Cart = ({ className }) => {
 
   const buttonText = showCart ? "Hide Cart" : "Show Cart";
   return (
-    <div className={className}>
+    <section className={className}>
       <h1>Cart</h1>
       <button
         onClick={handleShowCartClick}
@@ -35,7 +35,7 @@ const Cart = ({ className }) => {
           )}
         </div>
       )}
-    </div>
+    </section>
   );
 };
 export default Cart;

@@ -1,4 +1,4 @@
-@import '../../../theme.scss';
+@import "../../../theme.scss";
 
 .cart-item {
   display: grid;
@@ -8,7 +8,8 @@
   align-items: center;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid $gray;
+  border-bottom: 2px solid $gray;
+  padding: 1rem;
 
   .cart__image {
     max-width: 50px;
@@ -35,8 +36,22 @@
       row-gap: 1rem;
 
       .button--add {
+        background-color: $white;
+        border-bottom: 2px solid $springRain;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
       }
-      .button--dub {
+      .button--sub {
+        background-color: $white;
+        border-bottom: 2px solid $eunry;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
       }
     }
   }

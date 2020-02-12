@@ -21,10 +21,10 @@ const CartItem = ({ item, className }) => {
       <div className="cart_quantity-section">
         <p className="cart_quantity__quantity">{item.quantity}</p>
         <div className="cart_quantity__buttons">
-          <button type="button--add" onClick={handleAddQuantityClick}>
+          <button type="button" className="button--add" onClick={handleAddQuantityClick}>
             +
           </button>
-          <button type="button--sub" onClick={handleSubQuantityClick}>
+          <button type="button" className="button--sub" onClick={handleSubQuantityClick}>
             -
           </button>
         </div>

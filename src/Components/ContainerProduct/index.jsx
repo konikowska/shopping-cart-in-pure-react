@@ -11,11 +11,11 @@ const ContainerProduct = ({ className }) => {
   };
 
   return (
-    <div className={className}>
-      <p>Products</p>
+    <section className={className}>
+      <h1>Products</h1>
       <Select handleChange={handleChange} value={value} />
       <GridProducts sortBy={value} />
-    </div>
+    </section>
   );
 };
 export default ContainerProduct;

@@ -16,9 +16,8 @@ const CartContextProvider = props => {
             removeProduct(product);
             return;
           }
+          curr.price = product.initialPrice * curr.quantity;
         }
-
-        curr.price = product.initialPrice * curr.quantity;
 
         return [...prevState];
       }, [])
