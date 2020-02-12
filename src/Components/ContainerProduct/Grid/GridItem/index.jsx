@@ -1,6 +1,7 @@
 import * as React from "react";
 import { CartContext } from "../../../../contexts/CartContext";
 import "./styles.scss";
+// import "../../../../shared.scss";
 
 const GridItem = ({ item, className }) => {
   const { addProduct } = React.useContext(CartContext);
@@ -14,7 +15,12 @@ const GridItem = ({ item, className }) => {
         <p>{item.name}</p>
         <p>{`${item.initialPrice} ${item.currency}`}</p>
       </div>
-      <button onClick={handleAddToCartClick} className="product__button">add to cart</button>
+      <button
+        onClick={handleAddToCartClick}
+        className="button--blue product__button"
+      >
+        add to cart
+      </button>
     </li>
   );
 };
