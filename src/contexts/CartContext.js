@@ -6,6 +6,19 @@ const CartContextProvider = props => {
   const [cart, setCart] = React.useState([]);
   const [showCart, setShowCart] = React.useState(false);
 
+  React.useEffect(() => {
+    const savedCart = localStorage.getItem("savedCart");
+    if (savedCart) {
+      setCart(JSON.parse(savedCart));
+    }
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      localStorage.setItem("savedCart", JSON.stringify(cart));
+    };
+  });
+
   const updateProductQuantity = (product, amount) => {
     setCart(prevState =>
       prevState.reduce((prev, curr) => {
