@@ -3,18 +3,23 @@ import { CartContext } from "../../contexts/CartContext";
 import CartItem from "./CartItem";
 
 const Cart = ({ className }) => {
-  const { cart } = React.useContext(CartContext);
-  const [showCart, setShowCart] = React.useState(false);
+  const { cart, showCart, setShowCart } = React.useContext(CartContext);
 
   const handleShowCartClick = e => {
     e.preventDefault();
     setShowCart(!showCart);
   };
 
+  const buttonText = showCart ? "Hide Cart" : "Show Cart";
   return (
     <div className={className}>
       <h1>Cart</h1>
-      <button onClick={handleShowCartClick} className="button--blue cart__button">show cart</button>
+      <button
+        onClick={handleShowCartClick}
+        className="button--blue cart__button"
+      >
+        {buttonText}
+      </button>
       {showCart && (
         <div className={className}>
           {cart.length < 1 ? (
