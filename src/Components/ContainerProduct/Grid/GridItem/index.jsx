@@ -1,15 +1,15 @@
 import * as React from "react";
 import { CartContext } from "../../../../contexts/CartContext";
 import "./styles.scss";
-// import "../../../../shared.scss";
+import useCartContext from "../../../../contexts/useCartContext";
 
 const GridItem = ({ item, className }) => {
-  const { addProduct } = React.useContext(CartContext);
+  const { addProduct } = useCartContext();
   const handleAddToCartClick = () => {
     addProduct(item);
   };
   return (
-    <li className={className} key={item.name}>
+    <li className={className}>
       <img src={`${item.image.path}`} alt="" className="product__image" />
       <div className="product__desc">
         <p>{item.name}</p>

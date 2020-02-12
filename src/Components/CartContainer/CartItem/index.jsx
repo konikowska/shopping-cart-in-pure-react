@@ -1,9 +1,10 @@
 import * as React from "react";
 import "./styles.scss";
 import { CartContext } from "../../../contexts/CartContext";
+import useCartContext from "../../../contexts/useCartContext";
 
 const CartItem = ({ item, className }) => {
-  const { updateProductQuantity } = React.useContext(CartContext);
+  const { updateProductQuantity } =  useCartContext()
   const handleAddQuantityClick = e => {
     e.preventDefault();
     updateProductQuantity(item, 1);
@@ -15,7 +16,7 @@ const CartItem = ({ item, className }) => {
   };
 
   return (
-    <div key={item.id} className={className}>
+    <div className={className}>
       <img src={`${item.image.path}`} alt="" className="cart__image" />
       <p className="cart__name">{item.name}</p>
       <div className="cart_quantity-section">

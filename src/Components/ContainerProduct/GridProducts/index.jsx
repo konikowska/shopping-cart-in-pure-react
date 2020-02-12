@@ -2,11 +2,19 @@ import * as React from "react";
 import Grid from "../Grid";
 import products from "../../../api/mockup/data.js";
 
-const GridProducts = ({ className }) => {
+const GridProducts = ({ className, sortBy }) => {
+  const [sortedProducts, setSortedProducts] = React.useState(products);
+
+  React.useEffect(() => {
+    const productValues = Object.values(products);
+    setSortedProducts(productValues.sort((a, b) => (a[sortBy] > b[sortBy]) ? 1 : -1));
+  }, [sortBy]);
+
   return (
     <div className={className}>
-      <p>GridProducts Container</p>
-      {products && <Grid items={products} className="product-grid"/>}
+      {sortedProducts && (
+        <Grid items={sortedProducts} className="product-grid" />
+      )}
     </div>
   );
 };

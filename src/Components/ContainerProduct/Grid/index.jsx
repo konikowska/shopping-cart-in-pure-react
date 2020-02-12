@@ -9,7 +9,7 @@ const Grid = ({ items, className }) => {
   return (
     <ul className={className}>
       {Object.values(items).map(item => (
-        <GridItem key={item.name} item={item} className="grid-item" />
+        <GridItem key={`${item.name}-${item.id}`} item={item} className="grid-item" />
       ))}
     </ul>
   );

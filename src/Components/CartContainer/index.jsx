@@ -1,9 +1,10 @@
 import * as React from "react";
 import { CartContext } from "../../contexts/CartContext";
 import CartItem from "./CartItem";
+import useCartContext from "../../contexts/useCartContext";
 
 const Cart = ({ className }) => {
-  const { cart, showCart, setShowCart } = React.useContext(CartContext);
+  const { cart, showCart, setShowCart } = useCartContext();
 
   const handleShowCartClick = e => {
     e.preventDefault();
@@ -25,7 +26,13 @@ const Cart = ({ className }) => {
           {cart.length < 1 ? (
             <p>Your cart is empty</p>
           ) : (
-            cart.map(item => <CartItem item={item} className="cart-item" />)
+            cart.map(item => (
+              <CartItem
+                item={item}
+                key={`cart-${item.name}-${item.id}`}
+                className="cart-item"
+              />
+            ))
           )}
         </div>
       )}

@@ -1,16 +1,20 @@
 import * as React from "react";
 import GridProducts from "./GridProducts";
+import Select from "./Select";
 
 const ContainerProduct = ({ className }) => {
+  const [value, setValue] = React.useState("name");
+
+  const handleChange = e => {
+    e.preventDefault();
+    setValue(e.target.value);
+  };
+
   return (
     <div className={className}>
       <p>Products</p>
-      <label htmlFor="cars">Sort: </label>
-      <select id="sort">
-        <option value="price">price</option>
-        <option value="name">name</option>
-      </select>
-      <GridProducts />
+      <Select handleChange={handleChange} value={value} />
+      <GridProducts sortBy={value} />
     </div>
   );
 };
