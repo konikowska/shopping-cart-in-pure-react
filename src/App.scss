@@ -1,4 +1,4 @@
-@import './theme.scss';
+@import "./theme.scss";
 
 .App {
   display: grid;
@@ -13,10 +13,24 @@
     padding: 2rem;
     display: grid;
     row-gap: 1rem;
+    column-gap: 1rem;
     background-color: $mercury;
 
     .cart__button {
       max-width: 10rem;
+    }
+
+    .cart__button-clear {
+      background-color: $white;
+      color: $mineShaft;
+      max-width: 5rem;
+    }
+
+    .cart__header {
+      display: grid;
+      column-gap: 1rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto 1fr;
     }
   }
 
