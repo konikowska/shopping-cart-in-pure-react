@@ -14,10 +14,8 @@ const CartContextProvider = props => {
   }, []);
 
   React.useEffect(() => {
-    return () => {
-      localStorage.setItem("savedCart", JSON.stringify(cart));
-    };
-  });
+    localStorage.setItem("savedCart", JSON.stringify(cart));
+  }, [cart]);
 
   const updateProductQuantity = (product, amount) => {
     setCart(prevState =>
@@ -60,7 +58,14 @@ const CartContextProvider = props => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addProduct, updateProductQuantity, setShowCart, showCart, setCart }}
+      value={{
+        cart,
+        addProduct,
+        updateProductQuantity,
+        setShowCart,
+        showCart,
+        setCart
+      }}
     >
       {props.children}
     </CartContext.Provider>
