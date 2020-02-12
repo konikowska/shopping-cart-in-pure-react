@@ -1,7 +1,6 @@
 import * as React from "react";
-import { CartContext } from "../../../../contexts/CartContext";
-import "./styles.scss";
 import useCartContext from "../../../../contexts/useCartContext";
+import "./styles.scss";
 
 const GridItem = ({ item, className }) => {
   const { addProduct } = useCartContext();

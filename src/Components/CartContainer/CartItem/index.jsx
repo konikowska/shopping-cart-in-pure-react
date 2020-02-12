@@ -1,7 +1,6 @@
 import * as React from "react";
-import "./styles.scss";
-import { CartContext } from "../../../contexts/CartContext";
 import useCartContext from "../../../contexts/useCartContext";
+import "./styles.scss";
 
 const CartItem = ({ item, className }) => {
   const { updateProductQuantity } =  useCartContext()
