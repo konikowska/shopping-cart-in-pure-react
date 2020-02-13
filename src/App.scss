@@ -1,4 +1,5 @@
 @import "./theme.scss";
+@import "./mixins.scss";
 
 .App {
   display: grid;
@@ -8,6 +9,10 @@
   max-width: 100vw;
   overflow-x: hidden;
   padding: 2rem;
+
+  @include for-phone-only {
+    padding: 0;
+ }
 
   .cart {
     padding: 2rem;

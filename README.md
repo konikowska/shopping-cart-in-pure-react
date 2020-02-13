@@ -15,7 +15,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Responsiveness
 - Products should be saved and accessible after page refresh
 
-# Required tech stack
+## Required tech stack
 - SCSS without framework CSS
 - BEM CSS
 - Any JS framework
+
+## THINGS TO DO
+
+- add Flow to project
+- better styling
+- prettier app design
+- add .eslint config file
+- code refactor for better performance
+

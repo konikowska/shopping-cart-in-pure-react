@@ -1,5 +1,7 @@
 .product-grid {
-  list-style: none;
+  list-style-type: none;
+  margin: 2rem 0 0 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 2rem;
